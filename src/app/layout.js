@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import MainFooter from "../components/MainFooter";
 import CTA from "../components/CTA";
+import Nav from "../components/Nav.jsx";
+
 
 
 
@@ -14,12 +16,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-      <CTA/>
-      <footer>
-        <MainFooter/>
-      </footer>
+    <html lang="es">
+
+      <body className={inter.className}>
+        <Nav/>
+        {children}
+        <footer>     
+          <CTA/>
+          <MainFooter/>
+        </footer>
+      </body>
+
     </html>
   );
 }
