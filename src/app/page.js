@@ -37,7 +37,7 @@ export default function Home() {
                 <div className='grid gap-5 row-gap-10 lg:grid-cols-2'>
                     <div className='flex flex-col justify-center'>
                         <div className='max-w-xl mb-6'>
-                            <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none'>
+                            <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none'>
                                 Nosotros
                             </h2>
                             <p className='text-base text-gray-700 md:text-lg'>
@@ -150,8 +150,8 @@ export default function Home() {
                     </div>
                     <div>
                         <img
-                            className='object-cover w-full h-56 rounded shadow-lg sm:h-96'
-                            src='https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260'
+                            className='object-cover w-full h-56 sm:h-[574px] object-left overflow-x-visible'
+                            src='./home/nosotros-img.png'
                             alt=''
                         />
                     </div>
@@ -160,29 +160,36 @@ export default function Home() {
 
 
             {/* SERVICIOS */}
-            SERVICIOS
-            <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-              <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
-                <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
+            <div className=" py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl   lg:py-20 bg-red-400">
+                
+                <div className="flex flex-row mb-6 lg:justify-between  md:mb-8 px-4 md:px-24 lg:px-8 bg-violet-300">
+              <div className="flex flex-col mb-6 lg:justify-between  md:mb-8">
+                <h2 className="max-w-lg  font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none  group">
                   <span className="inline-block mb-1 sm:mb-4">
-                    The quick, brown fox<br className="hidden md:block" />
-                    jumps over a lazy dog
+                  Nuetros servicios
                   </span>
-                  <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100"></div>
+                  <div className="h-1 ml-auto duration-300 origin-left transform scale-x-30 "></div>
                 </h2>
-                <p className="text-gray-700 lg:text-sm lg:max-w-md">
-                  "Sed ut perspiciatis unde omnis iste natus error sit iste voluptatem accusantium doloremque rem aperiam, ipsa eaque quae. Sed ut perspiciatis unde omnis iste."
+                <p className="text-gray-700 lg:text-base lg:max-w-xl">
+                Nuestros proyectos reflejan el compromiso con nuestros clientes.
                 </p>
+              </div>
+
+              <div className="text-center self-end mb-6 md:mb-8">
+                <a href="/" aria-label="" className="text-sigma-500 inline-flex items-center font-semibold transition-colors duration-200 lg:text-sm">
+                Todos Nuestros Servicios
+                </a>
+              </div>
               </div>
 
               <div className="grid gap-0 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
 
                 <a href="/" aria-label="View Item">
                   <div className="relative overflow-hidden transition duration-200 transform shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-                    <img className="object-cover w-full h-56 md:h-64 xl:h-96" src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
-                    <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-                      <p className="text-sm font-medium tracking-wide text-white">
-                        Sed ut perspiciatis unde omnis iste natus error
+                    <img className="object-cover w-full h-56 md:h-64 xl:h-[420px]" src="./home/03_SERVOF01.jpg" alt="" />
+                    <div className="absolute inset-x-0 bottom-0 px-6 pt-24 pb-4 bg-gradient-to-t from-black to-transparent">
+                      <p className="text-base font-medium tracking-wide text-white">
+                      Ingeniería Geotécnica                      
                       </p>
                     </div>
                   </div>
@@ -190,10 +197,10 @@ export default function Home() {
 
                 <a href="/" aria-label="View Item">
                   <div className="relative overflow-hidden transition duration-200 transform shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-                    <img className="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3182750/pexels-photo-3182750.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
-                    <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-                      <p className="text-sm font-medium tracking-wide text-white">
-                        Leverage agile frameworks to provide a robust synopsis
+                    <img className="object-cover w-full h-56 md:h-64 xl:h-[420px]" src="./home/03_SERVOF02.jpg" alt="" />
+                    <div className="absolute inset-x-0 bottom-0 px-6 pt-24 pb-4 bg-gradient-to-t from-black to-transparent">
+                      <p className="text-base font-medium tracking-wide text-white">
+                      Ingeniería Estructural                      
                       </p>
                     </div>
                   </div>
@@ -201,10 +208,10 @@ export default function Home() {
 
                 <a href="/" aria-label="View Item">
                   <div className="relative overflow-hidden transition duration-200 transform shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-                    <img className="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
-                    <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-                      <p className="text-sm font-medium tracking-wide text-white">
-                        Dingy I'm tellin' you rhubaahb Bangah Jo-Jeezly
+                    <img className="object-cover w-full h-56 md:h-64 xl:h-[420px]" src="./home/03_SERVOF03.jpg" alt="" />
+                    <div className="absolute inset-x-0 bottom-0 px-6 pt-24 pb-4 bg-gradient-to-t from-black to-transparent">
+                      <p className="text-base font-medium tracking-wide text-white">
+                      Topografía                      
                       </p>
                     </div>
                   </div>
@@ -212,10 +219,10 @@ export default function Home() {
 
                 <a href="/" aria-label="View Item">
                   <div className="relative overflow-hidden transition duration-200 transform shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-                    <img className="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
-                    <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-                      <p className="text-sm font-medium tracking-wide text-white">
-                        Rough pomfret lemon shark plownose chimaera
+                    <img className="object-cover w-full h-56 md:h-64 xl:h-[420px]" src="./home/03_SERVOF04.jpg" alt="" />
+                    <div className="absolute inset-x-0 bottom-0 px-6 pt-24 pb-4 bg-gradient-to-t from-black to-transparent">
+                      <p className="text-base font-medium tracking-wide text-white">
+                      Consultoría Integral
                       </p>
                     </div>
                   </div>
@@ -223,44 +230,36 @@ export default function Home() {
 
               </div>
 
-              <div className="text-center">
-                <a href="/" aria-label="" className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                  See more
-                  <svg className="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
-                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
-                  </svg>
-                </a>
-              </div>
+  
 
             </div>
 
-            {/* info extra */}
+            {/* NUESTROS EQUIPOS */}
             <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
                 <div className='grid gap-5 row-gap-10 lg:grid-cols-2'>
                     <div>
                         <img
-                            className='object-cover w-full h-56 rounded shadow-lg sm:h-96'
-                            src='https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260'
-                            alt=''
+                            className='object-cover w-[500px] h-56 rounded shadow-lg sm:h-[623px]'
+                            src='./home/04_EQUIPOS.jpeg'
+                            alt='Nuestros Equipos'
                         />
                     </div>
                     <div className='flex flex-col justify-center'>
                         <div className='max-w-xl mb-6'>
-                            <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none'>
-                                The quick, brown fox
-                                <br className='hidden md:block' />
-                                jumps over
-                                <span className='relative px-1'>
-                                    <div className='absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400'></div>
-                                    <span className='relative inline-block text-deep-purple-accent-400'>a lazy dog</span>
-                                </span>
+                            <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none'>
+                            Nuestros equipos 
+
                             </h2>
                             <p className='text-base text-gray-700 md:text-lg'>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+                            En Estudio Sigma SRL fusionamos tecnología avanzada con la experiencia especializada, brindando soluciones eficientes, eficaces y confiables, utilizando herramientas de última generación y un enfoque innovador. Garantizamos resultados excepcionales, impulsados por la excelencia y la precisión en cada detalle
                             </p>
                         </div>
-                        <p className='mb-4 text-sm font-bold tracking-widest uppercase'>Features</p>
+                        <div className=" mb-6 md:mb-8">
+                <a href="/" aria-label="" className="text-sigma-500 inline-flex items-center font-semibold transition-colors duration-200 lg:text-sm">
+                Ver más
+                </a>
+              </div>
+                        {/* <p className='mb-4 text-sm font-bold tracking-widest uppercase'>Features</p>
                         <div className='grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0'>
                             <ul className='space-y-3'>
                                 <li className='flex'>
@@ -362,7 +361,7 @@ export default function Home() {
                                     Satoshi Nakamoto
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
